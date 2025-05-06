@@ -9,7 +9,7 @@ export default function Clients() {
     return (
         <div className="container mx-auto px-4 my-24">
             <p className="text-center mb-12">Our Clients include:</p>
-            <div className="flex flex-wrap justify-center space-x-12">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-8 md:gap-12">
                 <img src={verox} alt="Client 1" />
                 <img src={microsoft} alt="Client 2" />
                 <img src={hp} alt="Client 3" />  

@@ -2,17 +2,17 @@ import React from 'react';
 
 function BannerTwoColText() {
   return (
-    <div className="relative z-0 bg-black pt-36 pb-24 text-white">
-      <div className="mx-auto px-60 pt-50">
+    <div className="relative z-0 bg-black pt-24 md:pt-36 pb-12 lg:pb-24 text-white">
+      <div className="container mx-auto px-10 lg:px-60 pt-50">
         {/* Heading - Centered */}
-        <h2 className="mb-16 text-center text-4xl font-bold">
+        <h2 className="mb-10 md:mb-16 text-center text-2xl md:text-4xl font-bold">
           The business process problem solvers.
         </h2>
 
         {/* Two Column Text */}
-        <div className="grid grid-cols-1 gap-8 font-mono text-sm leading-relaxed md:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 font-mono text-sm leading-relaxed ">
           {/* Left Column */}
-          <div className="mx-auto max-w-xl md:mx-0 px-12">
+          <div className="mx-auto max-w-xl md:mx-0 lg:px-12">
             <p>
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a
@@ -23,7 +23,7 @@ function BannerTwoColText() {
           </div>
 
           {/* Right Column */}
-          <div className="mx-auto max-w-xl md:mx-0 px-12">
+          <div className="mx-auto max-w-xl md:mx-0 lg:px-12">
             <p>
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a

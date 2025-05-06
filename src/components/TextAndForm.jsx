@@ -100,7 +100,7 @@ function TextAndForm() {
                   <div className="flex justify-end">
                     <button
                       type="submit"
-                      className="px-8 py-4 bg-white text-brand font-semibold hover:bg-opacity-90 transition-colors"
+                      className="px-8 py-4 bg-white text-brand hover:bg-brand-darker font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Submit now
                     </button>

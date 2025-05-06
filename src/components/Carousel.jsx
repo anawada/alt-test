@@ -52,10 +52,10 @@ function Carousel() {
   };
 
   return (
-    <div className="-mb-62 mt-10 relative z-10">
+    <div className="-mb-62 md:mt-10 relative z-10">
       <div className="container">
         <div className="flex justify-between items-center mb-10">
-          <h2 className="text-3xl font-bold text-gray-900">Don't just take our word for it...</h2>
+          <h2 className="text-3xl font-bold">Don't just take our word for it...</h2>
           <a href="#" className="underline font-mono text-xs hover:text-brand">View all Case Studies</a>
         </div>
 
@@ -70,8 +70,8 @@ function Carousel() {
             
             {/* Quote Overlay */}
             <div className="absolute inset-0 bg-opacity-30 flex">
-              <div className="w-full md:w-2/3 px-20 py-20 bg-opacity-80 text-white">
-                <blockquote className="text-3xl/10 font-bold font-gilroy leading-tight mb-6">
+              <div className="w-full md:w-2/3 px-10 lg:px-20 py-10 md:py-20 bg-opacity-80 text-white">
+                <blockquote className="md:text-3xl/10 font-bold font-gilroy leading-tight mb-6">
                   "{testimonials[activeSlide].quote}"
                 </blockquote>
                 <div className="font-mono text-xs">
@@ -83,7 +83,7 @@ function Carousel() {
           </div>
 
           {/* Navigation Dots */}
-          <div className="absolute bottom-10 left-18 flex space-x-2">
+          <div className="absolute bottom-10 left-10 lg:left-18 flex space-x-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}

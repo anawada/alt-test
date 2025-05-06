@@ -33,7 +33,7 @@ function InsightsNews() {
   const regularArticles = articles.filter((article) => !article.featured);
 
   return (
-    <div className="py-20 text-white">
+    <div className="py-10 md:py-20 text-white">
       <h2 className="mb-12 text-4xl/14 font-bold">Insights & News</h2>
 
       <div className="space-y-12">

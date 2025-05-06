@@ -15,31 +15,32 @@ import TextAndForm from './components/TextAndForm';
 function App() {
   return (
     <>
-      <div>
-        <div 
-          className="relative pt-5 bg-brand-secondary w-full mx-auto h-auto min-h-screen/2 lg:min-h-screen/1.5 flex-shrink-0" 
-          style={{ 
-            backgroundImage: `url(${geometricSvgUrl})`, 
-            backgroundPosition: 'center right', 
-            backgroundRepeat: 'no-repeat', 
-            backgroundSize: '' 
-          }}
-        >
-          <DoubleNavbar />
-          <Hero />
-        </div>
-        <ServiceCards />
-        <Clients />
-        <Banner />
-        <div className="relative">
-          <Carousel />
-          <BannerTwoColText />
-        </div>
-        <InsightsAndFAQs />
-        <ExpertTeamStats />
-        <BannerVideo />
-        <TextAndForm />
+      {/* Hero section with background */}
+      <div
+        className="min-h-screen/2 lg:min-h-screen/1.5 relative h-auto w-full flex-shrink-0 bg-brand-secondary pt-5"
+        style={{
+          backgroundImage: `url(${geometricSvgUrl})`,
+          backgroundPosition: '100% 50%',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '50% auto',
+        }}
+      >
+        {/* Content container with max width */}
+        <DoubleNavbar />
+        <Hero />
       </div>
+      <ServiceCards />
+      <Clients />
+      <Banner />
+
+      <div className="relative">
+        <Carousel />
+        <BannerTwoColText />
+        <InsightsAndFAQs />
+      </div>
+      <ExpertTeamStats />
+      <BannerVideo />
+      <TextAndForm />
     </>
   );
 }

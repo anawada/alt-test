@@ -59,7 +59,7 @@ function FAQs() {
   };
 
   return (
-    <div className="py-20 text-white">
+    <div className="py-10 md:py-20 text-white">
       <div className="max-w-xl mx-auto md:ps-10 md:ml-0">
         <h2 className="text-4xl font-bold mb-12">FAQ's</h2>
         
@@ -73,8 +73,8 @@ function FAQs() {
                 className="w-full py-3 text-left flex justify-between items-center"
                 onClick={() => toggleExpand(faq.id)}
               >
-                <span className="text-2xl">{faq.question}</span>
-                <span className="text-2xl">
+                <span className="text-xl md:text-2xl">{faq.question}</span>
+                <span className="text-xl md:text-2xl">
                   {expandedId === faq.id ? '−' : '+'}
                 </span>
               </button>

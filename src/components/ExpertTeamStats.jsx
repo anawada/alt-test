@@ -46,22 +46,23 @@ function ExpertTeamStats() {
   ];
 
   return (
-    <div className="py-24 px-35 bg-white">
+    <div className="py-10 md:py-18 lg:py-24 px-10 md:px-35 bg-white">
       <div className="container">
-        <h2 className="text-4xl font-bold text-center mb-16">
-          A team of accredited experts
-          <br />
-          that support you
-        </h2>
+        <div className="px-10 lg:px-80">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-16">
+            A team of accredited experts
+            that support you
+          </h2>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {stats.map((stat) => (
             <div key={stat.id} className="text-center">
               <div className="mb-4 flex justify-center">
                 <img src={stat.icon} alt={stat.title} className="h-16 w-16" />
               </div>
               <h3 className="text-xl font-bold mb-2">{stat.title}</h3>
-              <div className="px-16">
+              <div className="px-10 lg:px-20">
                 <p className="text-gray-600 font-mono text-xs">{stat.description}</p>
               </div>
             </div>
