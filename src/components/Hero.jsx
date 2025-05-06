@@ -4,9 +4,7 @@ import heroSvgUrl2 from '../assets/laptop-screen.svg'
 function Hero() {
   return (
       <div className="container py-12 pb-42">
-        {/* Main Banner */}
         <div className="grid grid-cols-1 text-white md:grid-cols-2">
-          {/* Left Column - Text Content */}
           <div className="flex flex-col justify-center">
             <h1 className="mb-4 text-7xl leading-tight font-bold">
               We make your
@@ -19,17 +17,16 @@ function Hero() {
               solution to overcome them.
             </p>
           </div>
-          {/* Right Column - Image */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center relative">
             <img 
               src={heroSvgUrl} 
               alt="IT services illustration"
-              className="h-auto max-w-full" 
+              className="h-auto max-w-full absolute top-8 right-65 z-10" 
             />
             <img 
               src={heroSvgUrl2} 
               alt="IT services illustration"
-              className="h-auto max-w-full" 
+              className="h-auto max-w-full absolute top-2 right-0 z-10" 
             />
           </div>
         </div>

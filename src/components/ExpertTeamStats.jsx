@@ -46,7 +46,7 @@ function ExpertTeamStats() {
   ];
 
   return (
-    <div className="py-24 bg-white">
+    <div className="py-24 px-35 bg-white">
       <div className="container">
         <h2 className="text-4xl font-bold text-center mb-16">
           A team of accredited experts
@@ -61,7 +61,9 @@ function ExpertTeamStats() {
                 <img src={stat.icon} alt={stat.title} className="h-16 w-16" />
               </div>
               <h3 className="text-xl font-bold mb-2">{stat.title}</h3>
-              <p className="text-gray-600 font-mono text-sm">{stat.description}</p>
+              <div className="px-16">
+                <p className="text-gray-600 font-mono text-xs">{stat.description}</p>
+              </div>
             </div>
           ))}
         </div>

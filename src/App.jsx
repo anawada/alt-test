@@ -11,14 +11,13 @@ import ExpertTeamStats from './components/ExpertTeamStats';
 import geometricSvgUrl from './assets/geometric.svg';
 import BannerVideo from './components/BannerVideo';
 import TextAndForm from './components/TextAndForm';
-import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <div>
         <div 
-          className="relative bg-brand-secondary w-full mx-auto h-auto min-h-screen/2 lg:min-h-screen/1.5 flex-shrink-0" 
+          className="relative pt-5 bg-brand-secondary w-full mx-auto h-auto min-h-screen/2 lg:min-h-screen/1.5 flex-shrink-0" 
           style={{ 
             backgroundImage: `url(${geometricSvgUrl})`, 
             backgroundPosition: 'center right', 
@@ -40,7 +39,6 @@ function App() {
         <ExpertTeamStats />
         <BannerVideo />
         <TextAndForm />
-        <Footer />
       </div>
     </>
   );
