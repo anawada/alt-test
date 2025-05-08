@@ -88,7 +88,7 @@ function Carousel() {
             {/* Quote Overlay */}
             <div className="absolute inset-0 flex">
               <div className="w-full md:w-2/3 px-10 lg:px-15 py-10 md:py-20 bg-opacity-80 text-white transform transition-transform duration-500 ease-in-out">
-                <blockquote className="md:text-3xl/10 font-bold font-gilroy mb-6 drop-shadow-lg">
+                <blockquote className="text-2xl/10 md:text-3xl/10 font-bold font-gilroy mb-6 drop-shadow-lg">
                   "{testimonials[activeSlide].quote}"
                 </blockquote>
                 <div className="font-mono text-xs">
