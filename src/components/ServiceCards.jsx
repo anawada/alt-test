@@ -63,7 +63,7 @@ function ServiceCards() {
           <a 
             key={card.id}
             href={card.href}
-            className={`rounded-lg p-7 shadow-lg text-center flex flex-col h-full ${card.style.card} transition-all hover:shadow-xl cursor-pointer`}
+            className={`rounded-lg px-6 pt-8 pb-7 shadow-2xl text-center flex flex-col h-full ${card.style.card} transition-all hover:shadow-xl cursor-pointer`}
           >
             <div className="flex justify-center mb-2">
               <img src={card.icon} alt={card.title} className="h-13 w-11" />

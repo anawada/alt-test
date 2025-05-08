@@ -1,5 +1,7 @@
 import React from 'react';
 import feature from '../assets/feature.png';
+import news2 from '../assets/news1.png';
+import news1 from '../assets/news2.png';
 
 function InsightsNews() {
   const articles = [
@@ -14,14 +16,14 @@ function InsightsNews() {
       id: 2,
       title: 'Boost productivity within your law firm with xerox technology',
       date: '15/06/2024',
-      image: feature,
+      image: news1,
       featured: false,
     },
     {
       id: 3,
       title: 'What is Microsoft Loop and how does it work',
       date: '15/06/2024',
-      image: feature,
+      image: news2,
       featured: false,
     },
   ];
@@ -69,7 +71,7 @@ function InsightsNews() {
                   className="h-44 w-full object-cover"
                 />
               </div>
-              <div className="mt-4 pe-10">
+              <div className="mt-4 pe-4">
                 <p className="text-sm text-gray-500">{article.date}</p>
                 <h3 className="mt-2 text-2xl/8 font-bold transition-colors group-hover:text-brand">
                   {article.title}

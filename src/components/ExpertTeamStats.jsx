@@ -59,10 +59,10 @@ function ExpertTeamStats() {
           {stats.map((stat) => (
             <div key={stat.id} className="text-center">
               <div className="mb-4 flex justify-center">
-                <img src={stat.icon} alt={stat.title} className="h-16 w-16" />
+                <img src={stat.icon} alt={stat.title} className="h-18 w-18" />
               </div>
               <h3 className="text-xl font-bold mb-2">{stat.title}</h3>
-              <div className="px-10 lg:px-20">
+              <div className="px-10">
                 <p className="text-gray-600 font-mono text-xs">{stat.description}</p>
               </div>
             </div>

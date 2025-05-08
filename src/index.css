@@ -4,6 +4,7 @@
   --color-brand: #F4207B;
   --color-brand-darker: #C92C93;
   --color-brand-secondary: #31297D;
+  --color-blue: #3C2A7D;
   --color-form-bg: #FF3A7A;
   --font-gilroy: 'Gilroy', sans-serif;
   --font-mono: 'IBM Plex Mono', sans-serif;
@@ -24,7 +25,7 @@
 @layer components {
   /* Container for consistent content width */
   .container {
-    @apply mx-auto max-w-[1512px] px-4 lg:px-20;
+    @apply mx-auto max-w-[1512px] px-4 lg:px-10;
   }
 
   .nav-container {

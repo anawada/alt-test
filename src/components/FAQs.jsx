@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function FAQs() {
   // FAQ data
@@ -58,6 +58,8 @@ function FAQs() {
     setExpandedId(expandedId === id ? null : id);
   };
 
+  const answerRefs = useRef({});
+
   return (
     <div className="py-10 md:py-20 text-white">
       <div className="max-w-xl mx-auto md:ps-10 md:ml-0">
@@ -70,20 +72,30 @@ function FAQs() {
               className={`border-t border-gray-700 ${index === faqData.length - 1 && expandedId !== faq.id ? 'pb-3' : ''}`}
             >
               <button
-                className="w-full py-3 text-left flex justify-between items-center"
+                className="w-full py-3 text-left flex justify-between items-center cursor-pointer hover:text-brand transition-colors duration-300"
                 onClick={() => toggleExpand(faq.id)}
               >
                 <span className="text-xl md:text-2xl">{faq.question}</span>
-                <span className="text-xl md:text-2xl">
-                  {expandedId === faq.id ? '−' : '+'}
+                <span className="text-xl md:text-2xl transform transition-transform duration-300">
+                  {expandedId === faq.id ? '-' : '+'}
                 </span>
               </button>
               
-              {expandedId === faq.id && (
+              <div
+                ref={el => answerRefs[faq.id] = el}
+                style={{
+                  maxHeight: expandedId === faq.id
+                    ? answerRefs[faq.id]?.scrollHeight + 'px'
+                    : '0px',
+                  transition: 'max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s',
+                  opacity: expandedId === faq.id ? 1 : 0,
+                  overflow: 'hidden',
+                }}
+              >
                 <div className="pb-6 font-mono text-sm">
                   <p>{faq.answer}</p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
