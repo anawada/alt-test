@@ -10,8 +10,8 @@ function DoubleNavbar() {
 
     return (
         <div className="nav-container">
-            <div className="sm:ps-2 sm:pe-8 px-4 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between sm:justify-start flex-shrink-0 min-h-20 lg:h-24">
-                <div className="w-full flex justify-between items-center mb-4 sm:hidden">
+            <div className="lg:ps-2 lg:pe-8 px-4 py-6 lg:py-8 flex flex-col lg:flex-row items-center justify-between lg:justify-start flex-shrink-0 min-h-20 lg:h-24">
+                <div className="w-full flex justify-between items-center mb-4 lg:hidden">
                     <div>
                         <img src={logo} alt="DNS Logo" className="w-24 h-16" />
                     </div>
@@ -36,14 +36,14 @@ function DoubleNavbar() {
                 </div>
                 
                 <div 
-                    className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 sm:hidden ${
+                    className={`fixed inset-0 bg-opacity-70 z-40 transition-opacity duration-300 lg:hidden ${
                         isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
                     }`}
                     onClick={toggleMobileMenu}
                 />
 
                 <div 
-                    className={`fixed top-0 right-0 h-full w-64 bg-brand-secondary z-50 transform transition-transform duration-300 ease-in-out sm:hidden ${
+                    className={`fixed top-0 right-0 h-full w-64 bg-brand-secondary z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
                         isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
                     }`}
                 >
@@ -78,25 +78,25 @@ function DoubleNavbar() {
                             <div className="mb-4 font-mono text-sm">
                                 <span className="text-white">Request support</span>
                             </div>
-                            <button className="bg-white text-brand-secondary font-bold px-4 py-1 rounded shadow text-sm w-full">
+                            <button className="bg-white text-brand-secondary hover:text-brand font-bold px-4 py-1 rounded shadow text-sm w-full">
                                 Call Me Back
                             </button>
                         </div>
                     </div>
                 </div>
                 
-                <div className="hidden sm:block sm:me-10">
+                <div className="hidden lg:block lg:me-10">
                     <img src={logo} alt="DNS Logo" className="w-30 h-20" />
                 </div>
                 
-                <div className="hidden sm:flex flex-col items-center sm:items-start sm:justify-start flex-1">
-                    <div className="flex items-center space-x-8 mb-2 sm:mb-3 font-mono text-sm text-white">
+                <div className="hidden lg:flex flex-col items-center lg:items-start lg:justify-start flex-1">
+                    <div className="flex items-center space-x-8 mb-2 lg:mb-3 font-mono text-sm text-white">
                         <a href="tel:08450340895" className="whitespace-nowrap"> 0845 034 0895</a>
                         <a href="#">About us</a>
                         <a href="#">Careers</a>
                     </div>
                     
-                    <div className="flex items-center space-x-10 md:space-x-6 font-gilroy text-base sm:text-lg text-white">
+                    <div className="flex items-center space-x-10 md:space-x-6 font-gilroy text-base lg:text-lg text-white">
                         <a href="#">Services</a>
                         <a href="#">Case Studies</a>
                         <a href="#">Insights</a>
@@ -104,13 +104,13 @@ function DoubleNavbar() {
                     </div>
                 </div>
                 
-                <div className="hidden sm:flex sm:flex-col sm:items-end md:align-top lg:mt-4 sm:mt-0 sm:ml-8"> 
-                    <div className="mb-2 sm:mb-3 font-mono text-sm">
+                <div className="hidden lg:flex lg:flex-col lg:items-end md:align-top lg:mt-4 lg:ml-8"> 
+                    <div className="mb-2 lg:mb-3 font-mono text-sm">
                         <span className="text-white text-sm">Request support</span>
                     </div>
                     
                     <div className="flex items-center space-x-4 font-gilroy text-lg">
-                        <button className="bg-white text-brand-secondary font-bold px-4 sm:px-5 py-1 rounded shadow">Call Me Back</button>
+                        <button className="bg-white text-brand-secondary font-bold px-4 lg:px-5 py-1 rounded shadow">Call Me Back</button>
                     </div>
                 </div>
             </div>
