@@ -12,7 +12,7 @@ function BannerTwoColText() {
         {/* Two Column Text */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 font-mono text-sm leading-relaxed ">
           {/* Left Column */}
-          <div className="mx-auto max-w-xl md:mx-0 lg:px-12">
+          <div className="mx-auto max-w-xl md:mx-0 lg:px-6 xl:px-12">
             <p>
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a
@@ -23,7 +23,7 @@ function BannerTwoColText() {
           </div>
 
           {/* Right Column */}
-          <div className="mx-auto max-w-xl md:mx-0 lg:px-12">
+          <div className="mx-auto max-w-xl md:mx-0 lg:px-6 xl:px-12">
             <p>
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a

@@ -62,7 +62,7 @@ function FAQs() {
 
   return (
     <div className="py-10 md:py-20 text-white">
-      <div className="max-w-xl mx-auto md:ps-10 md:ml-0">
+      <div className="mx-auto md:ps-10 md:ml-0">
         <h2 className="text-4xl font-bold mb-12">FAQ's</h2>
         
         <div className="space-y-2 border-b border-gray-700">
